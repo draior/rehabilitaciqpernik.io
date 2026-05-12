@@ -867,8 +867,136 @@ a {
     width: 100%;
   }
 
-  .hero-actions,
-  .contact-actions {
-    flex-direction: column;
+.hero-actions,
+.contact-actions {
+  flex-direction: column;
+}
+}
+
+.topbar-inner {
+  margin-bottom: 1.2rem;
+}
+
+.service-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.service-link-card,
+.service-page-card,
+.service-hero-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.service-link-card {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.35rem;
+  border-radius: var(--radius-lg);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.service-link-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(90, 175, 195, 0.26);
+  box-shadow: 0 28px 54px rgba(56, 108, 121, 0.18);
+}
+
+.service-link-card span {
+  display: inline-flex;
+  color: var(--primary-deep);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.service-link-card h3,
+.service-page-card h2,
+.service-hero-card h1 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+}
+
+.service-link-card h3 {
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.service-link-card p,
+.service-page-card p,
+.service-page-card li {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.service-hero {
+  padding-top: 1rem;
+}
+
+.service-hero-card {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 248, 247, 0.84)),
+    url("./assets/logo-physio-center-pernik-transparent.png?v=4");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, right -1rem center;
+  background-size: auto, 16rem auto;
+}
+
+.service-hero-card h1 {
+  max-width: 12ch;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.service-page-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1rem;
+}
+
+.service-page-card {
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+}
+
+.service-page-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.45rem;
+}
+
+.service-bullets {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+@media (max-width: 960px) {
+  .service-directory-grid,
+  .service-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-hero-card {
+    padding: 1.5rem;
+    background-position: center, right -2rem bottom -1rem;
+    background-size: auto, 12rem auto;
+  }
+
+  .service-hero-card h1 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .service-hero-card {
+    padding: 1.25rem;
+    background-position: center, right -2rem bottom -1rem;
+    background-size: auto, 9rem auto;
   }
 }
