@@ -1000,3 +1000,106 @@ a {
     background-size: auto, 9rem auto;
   }
 }
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.8rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.breadcrumbs span {
+  opacity: 0.7;
+}
+
+.article-layout,
+.about-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.article-layout {
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.article-card,
+.sidebar-card,
+.faq-card,
+.about-card,
+.not-found-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.article-card,
+.sidebar-card,
+.faq-card,
+.about-card,
+.not-found-card {
+  padding: 1.5rem;
+}
+
+.article-card h2,
+.sidebar-card h3,
+.faq-card h3,
+.about-card h3,
+.not-found-card h1 {
+  margin-top: 0;
+  font-family: "Fraunces", serif;
+}
+
+.related-links,
+.faq-list,
+.about-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.related-links a {
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+
+.faq-list article + article,
+.about-list li + li {
+  border-top: 1px solid rgba(90, 175, 195, 0.12);
+  padding-top: 0.9rem;
+}
+
+.faq-list p,
+.article-card p,
+.sidebar-card p,
+.about-card p,
+.about-list li,
+.not-found-card p {
+  color: var(--muted);
+  line-height: 1.78;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1rem;
+}
+
+.not-found-wrap {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+}
+
+.not-found-card {
+  max-width: 42rem;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .article-layout,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

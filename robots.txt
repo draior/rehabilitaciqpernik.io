@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://draior.github.io/rehabilitaciqpernik.io/sitemap.xml
