@@ -1033,6 +1033,19 @@ a {
   }
 }
 
+@media (hover: none), (pointer: coarse) {
+  body {
+    padding-top: 0;
+  }
+
+  .topbar {
+    position: static;
+    left: auto;
+    transform: none;
+    width: auto;
+  }
+}
+
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
