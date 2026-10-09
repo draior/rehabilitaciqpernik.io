@@ -1,5 +1,5 @@
 const animatedItems = document.querySelectorAll(
-  '.hero-copy, .hero-card, .section-heading, .service-card, .timeline article, .equipment-card, .benefit-band, .contact-panel, .specialist-card, .gallery-card, .location-card, .map-card'
+  '.hero-copy, .hero-card, .section-heading, .featured-service-card, .osteo-feature, .service-card, .timeline article, .equipment-card, .benefit-band, .contact-panel, .specialist-card, .gallery-card, .location-card, .map-card'
 );
 
 animatedItems.forEach((item) => item.classList.add('fade-in'));
