@@ -1,3 +1,18 @@
+# Publish this file at the origin root, /robots.txt.
+# At the current GitHub project URL, a copy in the project subdirectory is not authoritative.
+# Search and user-request access are distinct from model training.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
 User-agent: *
 Allow: /
 
