@@ -17,11 +17,9 @@
   <meta name="twitter:title" content="За нас | Physio Center Pernik">
   <meta name="twitter:description" content="Повече за специалиста, подхода и базата на Physio Center Pernik.">
   <meta name="twitter:image" content="https://draior.github.io/rehabilitaciqpernik.io/assets/cvetelina-dragomirova-profile.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="./assets/favicon-physio-center-pernik.png?v=2">
+  <link rel="icon" type="image/png" href="./assets/physio-center-pernik-icon.png">
   <link rel="stylesheet" href="./styles.css?v=8">
+  <link rel="stylesheet" href="./refresh.css?v=1">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,7 +59,12 @@
       ],
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61563356439682"
-      ]
+      ],
+      "amenityFeature": {
+        "@type": "LocationFeatureSpecification",
+        "name": "Кабинет на партер",
+        "value": true
+      }
     },
     {
       "@type": "Person",
@@ -97,7 +100,7 @@
       "isPartOf": {
         "@id": "https://draior.github.io/rehabilitaciqpernik.io/#website"
       },
-      "dateModified": "2026-11-09",
+      "dateModified": "2026-11-10",
       "breadcrumb": {
         "@id": "https://draior.github.io/rehabilitaciqpernik.io/about.html#breadcrumbs"
       },
@@ -127,23 +130,11 @@
 }
   </script>
 </head>
-<body>
+<body class="inner-page">
+<a class="skip-link" href="#main-content">Към съдържанието</a>
   <div class="page-shell">
     <header class="service-hero">
-      <nav class="topbar topbar-inner">
-        <div class="brand">
-          <img class="brand-favicon" src="./assets/favicon-physio-center-pernik.png?v=2" alt="Лого на Physio Center Pernik" width="40" height="40" decoding="async">
-          <a class="brand-text" href="./">Physio Center Pernik</a>
-          <a class="brand-phone" href="tel:+359899332245">+359899332245</a>
-        </div>
-        <div class="topbar-links">
-          <a href="./parvo-poseshtenie.html">Първо посещение</a>
-          <a href="./">Начало</a>
-          <a href="./#services-directory">Услуги</a>
-          <a href="./#articles">Статии</a>
-          <a href="./#contact">Контакт</a>
-        </div>
-      </nav>
+      <nav class="topbar refreshed-topbar" aria-label="Основна навигация"><a class="brand refreshed-brand" href="./"><img src="./assets/physio-center-pernik-icon.png" alt="" width="44" height="44"><span>Physio Center<strong>Pernik</strong></span></a><div class="primary-nav"><a href="./#services-directory">Услуги</a><a href="./about.html">За специалиста</a><a href="./#gallery">Кабинетът</a><a href="./parvo-poseshtenie.html">Първо посещение</a><a href="./#contact">Контакт</a></div><a class="desktop-call button button-primary" href="tel:+359899332245">Обади се за час</a><details class="nav-menu"><summary>Меню</summary><div class="mobile-nav"><a href="./#services-directory">Услуги</a><a href="./about.html">За специалиста</a><a href="./#gallery">Кабинетът</a><a href="./parvo-poseshtenie.html">Първо посещение</a><a href="./#contact">Контакт</a><a href="tel:+359899332245">+359 899 332 245</a></div></details></nav>
       <div class="service-hero-card">
         <div class="breadcrumbs">
           <a href="./">Начало</a><span>/</span><strong>За нас</strong>
@@ -154,10 +145,10 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="section">
         <div class="about-grid">
-          <article class="about-card" id="cvetelina-dragomirova">
+          <article class="about-card" id="cvetelina-dragomirova"><img class="about-real-portrait" src="./assets/cvetelina-dragomirova.jpg" width="640" height="640" alt="Цветелина Драгомирова, кинезитерапевт" decoding="async">
             <h2>Цветелина Драгомирова</h2>
             <p>Цветелина Драгомирова е кинезитерапевт с над 20 години опит в рехабилитацията, физиотерапията, лечебния масаж и ШРОТ терапията. Завършила е Националната спортна академия и работи с деца и възрастни при различни двигателни, следоперативни, ортопедични и неврологични състояния.</p>
             <p>Подходът ѝ е насочен към реалното възстановяване на функцията, а не само към временно облекчение. Затова всяка програма започва с индивидуална оценка и се адаптира според състоянието, възрастта и ежедневните нужди на пациента.</p>
@@ -175,14 +166,10 @@
         </div>
       </section>
       <section class="section"><div class="service-page-card"><h2>Консултация и първо посещение в Перник</h2><p>Всяка програма започва с индивидуална оценка на движението, натоварването и ежедневните нужди. За подготовката, документите и записването вижте <a href="./parvo-poseshtenie.html">информацията за първо посещение</a>.</p><p>Адрес: ж.к. Красно село 19Б, 2300 Перник. Телефон: <a href="tel:+359899332245">+359 899 332 245</a>.</p></div></section>
-    </main>
-    <footer class="site-footer site-footer-details">
-      <div><strong><a href="./">Physio Center Pernik</a></strong>
-        <p>ж.к. Красно село 19Б, 2300 Перник<br>Понеделник – петък: 08:00–18:00</p></div>
-      <div><a href="tel:+359899332245">+359 899 332 245</a><br><a href="mailto:cvetelina_nsa@abv.bg">cvetelina_nsa@abv.bg</a></div>
-      <nav aria-label="Полезни връзки"><a href="./about.html">За специалиста</a><a href="./parvo-poseshtenie.html">Първо посещение</a><a href="./#location">Как да ни намерите</a></nav>
-      <span>© D&amp;C</span>
-    </footer>
+    <section class="section"><div class="service-page-card"><h2>Мнения и препоръки</h2><p>Прочетете препоръките за Цветелина и разгледайте профила на центъра.</p><div class="related-links"><a href="https://www.facebook.com/groups/3435924060060188/posts/4114697765516144/" target="_blank" rel="noopener noreferrer">Препоръки във Facebook</a><a href="https://www.google.com/search?q=Physio+Center+Pernik&amp;stick=H4sIAAAAAAAA_-NgU1I1qDA0SUxMTkoxSkpOTE41TUqxMqgwNjKwTLFMSkwyMTM1MUpOXcQqEpBRWZyZr-CcmleSWqQQkFqUl5kNAMVBHuxAAAAA&amp;hl=bg" target="_blank" rel="noopener noreferrer">Physio Center Pernik в Google</a></div></div></section></main>
+    <footer class="site-footer refreshed-footer"><div><a class="footer-brand" href="./">Physio Center Pernik</a><p>Индивидуална грижа за движението<br>и възстановяването в Перник.</p></div><nav aria-label="Полезни връзки"><a href="./about.html">За Цветелина</a><a href="./parvo-poseshtenie.html">Първо посещение</a><a href="./#articles">Полезни статии</a></nav><div><a href="tel:+359899332245">+359 899 332 245</a><br><a href="mailto:cvetelina_nsa@abv.bg">cvetelina_nsa@abv.bg</a><p>ж.к. Красно село 19Б, Перник · партер</p></div><span class="footer-credit">© Physio Center Pernik · D&amp;C</span></footer>
   </div>
+<div class="mobile-callbar"><a href="tel:+359899332245"><span>Обади се за час</span><span>0899 332 245</span></a></div>
+<script src="./script.js?v=2" defer></script>
 </body>
 </html>
